@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- add a title (a) -->
+		<script src="js/myScript.js">
+		</script>
+		<title>My Shopping Cart</title>
+		<link rel="stylesheet" href="styles/styles.css"> <!-- want to go inside the style folder-->
+	</head>
+	<body>
+	<!-- add a logo (b) -->
+		<img src ="images/logo.jpg" width="200" height="200" alt="logo" class="logo"> <!-- dont want src because we are in the folder--> <!--added css file--> 
+		<!-- add a header (c)-->
+		<h1>Shopping Cart</h1>
+		<!-- add a sub-header (c) -->
+		<h2>The online shopping store</h2>
+		<!-- add a horizontal line (d)-->
+		<hr class="line1">
+		<!-- add a horizontal menu (e) -->
+		<ul class="nav">
+			<li class="list"><a href="index.html">Home</a></li>
+			<li class="list"><a href="news.html">News</a></li>
+			<li class="list"><a href="#">Contact</a></li>
+			<li class="list"><a href="about.php">About</a></li>
+		</ul>
+	
+		
+	<!-- add a horizontal line (d)-->
+	<hr>
+	
+	<!--form headder-->
+	<center>
+		<h2>Registration Form</h2>
+	<center>
+	
+	<!--form-->
+	<form action="submitRegistration.php" method="POST" onsubmit="return checkPassword()">
+		
+		First Name: <br>
+		<input type="text" name="firstname" placeholder="First name" required><br><br> <!--by giving placeholder, we can see light letters as instruction-->
+		
+		Last Name: <br>
+		<input type="text" name="lastname" placeholder="Last name" required><br><br>
+		
+		Gender: <br>
+		<input type="radio" name="gender" value="Male" checked>
+		<label for="Male">Male</label><br>
+		<input type="radio" name="gender" value="Female">Female<br>
+		
+		Mobile Number:<br>
+		<input type="tel" id="mobile_number" name="mobile_number" pattern="[0-9]{10}" placeholder="mobile number"><br>
+	
+		E-mail:<br>
+		<input type="email" id="email" name="email" placeholder="email" pattern="[a-z0-9._%+-@a-z0-9.-]=+\.[a-z]{2,3}" required><br>
+		
+		Address:<br>
+		<textarea id="Address" name="Address" rows="4" cols="50"></textarea><br>
+		
+		DOB:<br>
+		<input type="datetime-local"><br>
+		
+		
+		Password:<br>
+		<input type="password" name="password"id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,10}" required><br>
+		
+		Repassword:<br>
+		<input type="password" name="Repassword"id="Repassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,10}" required><br>
+		
+		<input type = "checkbox" name = "check" id = "check" onclick ="enableButton()" required> Accept privacy policy and terms <br>
+		
+		<input type= "submit" value= "submit" id= "submitbtn">
+	
+	</form>
+		
+	<!-- add a footer (g)-->
+		<footer>
+		<center>
+			<p>Author: Umayangi Rajapaksha</p>
+			<p><a href="‘http://courseweb.sliit.lk/’">visit to course</a></p>
+		</center>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- add a title (a) -->
+		<title>My Shopping Cart</title>
+		<link rel="stylesheet" href="styles/styles.css"> <!-- want to go inside the style folder-->
+		<script src="js/myScript.js">
+		</script>
+		<script>
+		document.write(Date()); <!-- must D capital, brackets-->
+		</script>
+	</head>
+	<body>
+	<!-- add a logo (b) -->
+		<img src ="images/logo.jpg" width="200" height="200" alt="logo" class="logo"> <!-- dont want src because we are in the folder--> <!--added css file--> 
+		<!-- add a header (c)-->
+		<h1>Shopping Cart</h1>
+		<!-- add a sub-header (c) -->
+		<h2>The online shopping store</h2>
+		<!-- add a horizontal line (d)-->
+		<hr class="line1">
+		<!-- add a horizontal menu (e) -->
+		<ul class="nav">
+			<li class="list"><a href="#">Home</a></li>
+			<li class="list"><a href="news.html">News</a></li>
+			<li class="list"><a href="https://courseweb.sliit.lk/course/index.php?categoryid=27">Contact</a></li>
+			<li class="list"><a href="about.php">About</a></li>
+		</ul>
+		<div class="newslayout">
+		<!-- add a button -->
+		<center>
+		<button class="bttn1" type="button" id="btn1" onclick="LoadData('btn1')">Iphone</button>
+		<button class="bttn1" type="button" id="btn2" onclick="LoadData('btn2')">samsung</button>
+		<button class="bttn1" type="button" id="btn3" onclick="LoadData('btn3')">oppo</button>
+		<button class="bttn1" type="button" id="btn4" onclick="LoadData('btn4')">nokia</button>
+		<button class="bttn1" type="button" id="btn4" onclick="priceForLoop()">Average Price</button>
+		<button class="bttn1" type="button" id="high" onclick="priceHigher()">prices higher than 210000</button>
+		<button class="bttn1" type="button" id="low" onclick="pricelower()">prices lower than 210000</button>
+		<!--loaddata is function name of js file and btn1 is the id -->
+		<center>
+		</div>
+	<!-- landing image-->
+	<center>
+	<img id="Image1" src="images/phones.jfif">
+	<p class="text1" id="para">A smartphone is a cellular telephone with an integrated computer and other features not originally associated with telephones, such as an operating system (OS), web browsing and the ability to run software applications. Smartphones are used by consumers and as part of a person's business or work</p>
+	</center>
+	<!-- add a horizontal line (d)-->
+		<hr>
+	<!-- add a footer (g)-->
+		<footer>
+		<center>
+			<p>Author: Umayangi Rajapaksha</p>
+			<p><a href="‘http://courseweb.sliit.lk/’">visit to course</a></p>
+		</center>
+		</footer>
+	</body>
+</html>
